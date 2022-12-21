@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        #wrap_div{
+            width:100%;
+            height: 100%;
+            background:#000;
+            position:relative;
+        }
+          
+        #wrap_div .inner_div{ 
+            width:80%;
+            height:80%;
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin-left:-40%;
+            margin-top:-25%;
+            text-align: center;
+            background:ivory;
+        }
+        table{
+            margin-left:auto; 
+            margin-right:auto;
+        }
+        .margin15{
+            margin-top:15%;
+        }
+        .margin5{
+            margin-top:5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap_div">
+        <div class="inner_div">
+            <p class="margin15">Login</p>
+
+                <table class="margin15">
+                   {{form}}
+                </table>
+                <input type="submit" value="login">
+
+                <!-- <table class="margin5">
+                    <tr>
+                        <td>
+                            <span>ID</span>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>PASSWORD</span>
+                        </td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="login">
+                        </td>
+                        <td></td>
+                    </tr>
+                </table> -->
+
+        </div>
+
+    </div>
+</body>
+</html>
